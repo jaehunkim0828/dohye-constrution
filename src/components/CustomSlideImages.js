@@ -26,9 +26,17 @@ const CustomSlideImage = () => {
       <Slide easing="ease" {...slideInProperties}>
         <div className="each-slide">
           <div style={{width: "100%"}}>
-            <div style={{ objectFit: "cover", width: "100%", height: '80vh', background: `url(${image1}) no-repeat center center`, backgroundSize: 'cover'}} >
-              <div id='slide-image-script1'>
-                <div className='dohye-script'>도혜 종합건설</div>
+            <div id='slide-image-container'style={{ objectFit: "cover", width: "100%", height: '80vh', background: `url(${image1}) no-repeat center center`, backgroundSize: 'cover'}} >
+              <div id='slide-image-script1-1'>
+                <div>
+                  천안공장 신축공사
+                </div>
+              </div>
+              <div id='slide-image-script1-2'>
+                <div>
+                  <span className='slide-script1'>도혜</span>
+                  <span id='slide-script-black' className='slide-script1'>  종합건설</span>
+                </div>
                 <div className='slide-subscript1'>저희는 신뢰를 바탕으로 정직하게 공사합니다</div>
                 <div className='slide-subscript1'>이 신뢰를 바탕으로 플렌트건설 및 정무공사 중심으로 거듭 발전하고 있습니다.</div>
               </div>
