@@ -15,7 +15,6 @@ import Brochure from './pages/Brochure';
 import Home from './pages/Home';   
 import Technology from './pages/Technology';
 import Ideology from './pages/Ideology';
-import History from './pages/History';
 import Status from './pages/Status';
 import Certification from './pages/Certification';
 import Construction from './pages/Construction';
@@ -36,15 +35,12 @@ function App() {
             <Ideology />
           </Route>
           <Route path="/page1-3">
-            <History />
-          </Route>
-          <Route path="/page1-4">
             <Status />
           </Route>
-          <Route path="/page1-5">
+          <Route path="/page1-4">
             <Certification />
           </Route>
-          <Route path="/page2">
+          <Route path="/page2-1">
             <Construction />
           </Route>
           <Route path="/page3-1">
