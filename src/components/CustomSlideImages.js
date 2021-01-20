@@ -32,7 +32,7 @@ const CustomSlideImage = () => {
                   천안공장 신축공사
                 </div>
               </div>
-              <div id='slide-image-script1-2'>
+              <div className='slide-image-script1-2'>
                 <div>
                   <span className='slide-script1'>도혜</span>
                   <span id='slide-script-black' className='slide-script1'>  종합건설</span>
@@ -45,15 +45,27 @@ const CustomSlideImage = () => {
         </div>
         <div className="each-slide">
           <div style={{width: "100%"}}>
-          <div style={{ objectFit: "cover", width: "100%", height: '80vh', background: `url(${image2}) no-repeat center center`, backgroundSize: 'cover'}} >
-              <span>Slide 2</span>
+            <div style={{ objectFit: "cover", width: "100%", height: '80vh', background: `url(${image2}) no-repeat center center`, backgroundSize: 'cover'}} >
+              <div>아산공장 신축공사</div>
             </div>
           </div>
         </div>
         <div className="each-slide">
           <div style={{width: "100%"}}>
-          <div style={{ objectFit: "cover", width: "100%", height: '80vh', background: `url(${image3}) no-repeat center center`, backgroundSize: 'cover'}} >
-              <span>Slide 3</span>
+            <div style={{ objectFit: "cover", width: "100%", height: '80vh', background: `url(${image3}) no-repeat center center`, backgroundSize: 'cover'}} >
+              <div id='slide-script3'>
+                <div>
+                  <span className='slide-script3-title'>도혜</span>
+                  <span id='slide-script-black' className='slide-script3-title'>종합건설</span>
+                </div>
+                <div>
+                  <div className='slide-script3-sub'>1. 고객신뢰 만족</div>
+                  <div className='slide-script3-sub'>2. 내영경영</div>
+                  <div className='slide-script3-sub'>3. 품질만족</div>
+                  <div className='slide-script3-sub'>4. 서비스만족</div>
+                  <div className='slide-script3-sub'>5. 기술 축척</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

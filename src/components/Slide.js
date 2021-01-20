@@ -3,6 +3,7 @@ import { withRouter } from 'react-router';
 
 function Slide(props) {
   const page = props.page;
+  const pageName = props.pageName;
   const { history } = props;
 
   const checkpage = () => {
@@ -39,7 +40,7 @@ function Slide(props) {
       arr = [
         {
           name: '공사실적현황',
-          page: '/page3-1'
+          page: '/page3-1',
         },
         {
           name: '기술자 보유현황',
@@ -71,14 +72,26 @@ function Slide(props) {
     <div id='slide-backgroud'>
       <div id ='slide-container'>
       {
-        checkpage().map(data => (
+        checkpage().map((data) => (
+          data.name === pageName
+            ? 
+            <button
+            className='list-button'
+            key={data.name}
+            onClick={() => {
+              history.push(data.page);
+            }} 
+            style={{backgroundColor: 'rgb(107, 92, 82)', color: 'white'}}
+          >
+            {data.name}
+          </button> 
+            :
           <button
             className='list-button'
             key={data.name}
             onClick={() => {
               history.push(data.page);
-            }}
-            
+            }} 
           >
             {data.name}
           </button>
