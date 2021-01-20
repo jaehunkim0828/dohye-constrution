@@ -1,8 +1,13 @@
 import React from 'react';
+import Slide from '../components/Slide';
 
 function Coporation() {
+  const page = 'page3'
   return (
-    <div>Coporation</div>
+    <div>
+      <Slide page={page}/>
+      <div>hi</div>
+    </div>
   );
 }
 

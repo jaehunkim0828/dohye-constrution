@@ -69,13 +69,13 @@ function CustomNav() {
               console.log(isIntroHover);
             }}
           >
-            <NavDropdown.Item href='/page1-1'>인사말</NavDropdown.Item>
+            <NavDropdown.Item className='down-item' href='/page1-1'>인사말</NavDropdown.Item>
             <NavDropdown.Divider />
-            <NavDropdown.Item href='/page1-2'>경영이념</NavDropdown.Item>
+            <NavDropdown.Item className='down-item' href='/page1-2'>경영이념</NavDropdown.Item>
             <NavDropdown.Divider />
-            <NavDropdown.Item href='/page1-3'>조직현황</NavDropdown.Item>
+            <NavDropdown.Item className='down-item' href='/page1-3'>조직현황</NavDropdown.Item>
             <NavDropdown.Divider />
-            <NavDropdown.Item href='/page1-4'>인증서</NavDropdown.Item>
+            <NavDropdown.Item className='down-item' href='/page1-4'>인증서</NavDropdown.Item>
           </NavDropdown>
           <NavDropdown
             className='list'
@@ -91,7 +91,7 @@ function CustomNav() {
               console.log();
             }}
           >
-            <NavDropdown.Item href='/page2-1'>준공/ 시공사진</NavDropdown.Item>
+            <NavDropdown.Item className='down-item' href='/page2-1'>준공/ 시공사진</NavDropdown.Item>
           </NavDropdown>
           <NavDropdown
             className='list'
@@ -107,9 +107,9 @@ function CustomNav() {
               console.log(isStatusHover);
             }}
           >
-            <NavDropdown.Item href='/page3-1'>공사실적현황</NavDropdown.Item>
+            <NavDropdown.Item className='down-item' href='/page3-1'>공사실적현황</NavDropdown.Item>
             <NavDropdown.Divider />
-            <NavDropdown.Item href='/page3-2'>기술자 보유현황</NavDropdown.Item>
+            <NavDropdown.Item className='down-item' href='/page3-2'>기술자 보유현황</NavDropdown.Item>
           </NavDropdown>
           <NavDropdown
             className='list'
@@ -125,9 +125,9 @@ function CustomNav() {
               console.log(isCenterHover);
             }}
           >
-            <NavDropdown.Item href='/page4-1'>약도</NavDropdown.Item>
+            <NavDropdown.Item className='down-item' href='/page4-1'>약도</NavDropdown.Item>
             <NavDropdown.Divider />
-            <NavDropdown.Item href='/page4-2'>브로셔</NavDropdown.Item>
+            <NavDropdown.Item className='down-item' href='/page4-2'>브로셔</NavDropdown.Item>
           </NavDropdown> 
         </Navbar.Collapse>
         </Nav>

@@ -1,8 +1,13 @@
 import React from 'react';
+import Slide from '../components/Slide';
 
 function Map() {
+  const page = 'page4'
   return (
-    <div>Map</div>
+    <div>
+      <Slide page={page}/>
+      <div>hi</div>
+    </div>
   );
 }
 

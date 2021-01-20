@@ -7,6 +7,21 @@ button:focus {
   outline: 0;
 }
 
+.down-item:active {
+  background-color: rgb(248, 249, 250);
+  color: black;
+}
+
+.down-item:visited {
+  background-color: rgb(248, 249, 250);
+  color: black;
+}
+
+.down-item:hover {
+  background-color: rgb(108, 97, 90);
+  color: black;
+}
+
 @media (max-width: 600px) {
   * {
     font-size: 0.9rem;
@@ -90,7 +105,7 @@ button:focus {
     padding: 0.5rem 10rem;
     display: flex;
     justify-content: space-between;
-    width: 196vh;
+    width: 100%;
     align-items: center;
     background-color: rgb(248, 249, 250);
   }
@@ -258,7 +273,6 @@ button:focus {
 /* slide */
 
 #slide-container {
-  width: 50%;
   display: flex;
 }
 
@@ -269,8 +283,12 @@ button:focus {
 }
 
 .list-button {
-  flex: 1;
+  width: 10rem;
   border: none;
   background-color: white;
   border: 0.1rem solid black;
+}
+
+.list-button:hover {
+  background-color: rgb(108, 97, 90);
 }

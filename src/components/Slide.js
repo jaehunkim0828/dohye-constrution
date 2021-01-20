@@ -28,13 +28,36 @@ function Slide(props) {
       ];
       return arr;
     } else if (page === 'page2') {
-      arr = ['/page2-1'];
+      arr = [
+        {
+          name: '준공/ 시공사진',
+          page: '/page2-1'
+        },
+      ];
       return arr;
     } else if (page === 'page3') {
-      arr = ['/page3-1', '/page3-2'];
+      arr = [
+        {
+          name: '공사실적현황',
+          page: '/page3-1'
+        },
+        {
+          name: '기술자 보유현황',
+          page: '/page3-2'
+        },
+      ];
       return arr;
     } else {
-      arr = ['/page4-1', '/page4-2'];
+      arr = [
+        {
+          name: '약도',
+          page: '/page4-1'
+        },
+        {
+          name: '브로셔',
+          page: '/page4-2'
+        },
+      ];
       return arr;
     }
   }
