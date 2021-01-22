@@ -7,6 +7,11 @@ button:focus {
   outline: 0;
 }
 
+*{
+  font-family: 'Noto Sans KR', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+}
+
 .down-item:active {
   background-color: rgb(248, 249, 250);
   color: black;
@@ -66,6 +71,14 @@ button:focus {
 /* navbar */
 
 @media (max-width: 880px) and (min-width: 600px) {
+  .page-subtitle-black {
+    font-size: 2rem;
+  }
+
+  .page-subtitle-red {
+    font-size: 2rem;
+  }
+
   * {
     font-size: 0.9rem;
   }
@@ -161,6 +174,7 @@ button:focus {
 #slide-image-container {
   display: flex;
   align-items: flex-end;
+  justify-content: space-between;
 }
 
 #slide-image-script1-1 {
@@ -169,8 +183,8 @@ button:focus {
   color: white;
   text-shadow: 0 1px 1px grey;
   position: relative;
+  bottom: 2rem;
   left: 3rem;
-  bottom: 1rem;
 }
 
 .slide-image-script1-2 {
@@ -180,8 +194,8 @@ button:focus {
   display: flex;
   flex-direction: column;
   position: relative;
-  left: 20rem;
   bottom: 2rem;
+  right: 3rem;
 }
 
 .slide-subscript1 {
@@ -320,4 +334,178 @@ button:focus {
 .list-button:hover {
   background-color: rgb(107, 92,82);
   color: white;
+}
+
+
+/* introduction */
+#intro-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 4rem;
+  width: 100%;
+  height: 35rem;
+}
+
+#intro-title {
+  display: flex;
+  flex-direction: column;
+  width: 23rem;
+  height: 13rem;
+  color:rgb(64, 64, 64);
+}
+
+#intro-korean{
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+#intro-english{
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+#intro-english-top-red{
+  color:rgb(153, 38, 38);
+}
+
+#introduction {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+  width: 43rem;
+  height: 30rem;
+  color: rgb(64, 64, 64);
+}
+.intro-first{
+  color: black;
+}
+#intro-bold-first{
+  font-weight: 500;
+}
+#intro-bold-second{
+  font-weight: 500;
+}
+#intro-middle1{
+margin-top: 2rem;
+}
+#intro-middle2{
+  margin-top: 0.4rem;
+}
+#intro-middle4{
+  margin-top: 1rem;
+}
+#intro-bottom{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 4rem;
+}
+.intro-bottom{
+ color: rgb(107, 92, 82);
+ font-weight: 500;
+
+}
+
+#intro-bottom-red{
+  color: rgb(153, 38, 38);
+  margin-left: 0.2rem;
+}
+
+#intro-name{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-weight: 500;
+  color: black;
+  font-size: 2.2rem;
+}
+
+/* construction-page */
+
+.construction-container {
+  
+}
+
+.page-title-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 10rem;
+}
+
+.page-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: rgb(64, 64, 64);
+}
+
+.page-subtitle {
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+
+.page-subtitle-black {
+  color: rgb(64, 64, 64);
+}
+
+.page-subtitle-red {
+  color: rgb(153, 38, 38);
+  position: relative;
+  bottom: 0.6rem;
+}
+
+#construction-row-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.construction-row-container {
+  width: 70rem;
+  margin: 0.25rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.construction-item-container {
+  display: flex;
+  border: 0.1rem solid rgb(107, 92, 82);
+  width: 32rem;
+  margin: 1rem;
+  min-width: 15rem;
+  height: 15rem;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1.5rem 1rem;
+}
+
+.construction-image {
+  min-width: 7rems;
+  width: 14rem;
+  height: 100%;
+}
+
+.construction-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  height: 80%;
+  justify-content: space-around;
+}
+
+.construction-text-title {
+  font-weight: 700;
+}
+
+.construction-text-content {
+  font-weight: 500;
+}
+
+.construction-text-items {
+
 }
