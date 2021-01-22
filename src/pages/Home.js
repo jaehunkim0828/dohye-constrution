@@ -27,7 +27,7 @@ function Home(props) {
             </button>
             <button
               onClick={() => {
-                history.push('/page2')
+                history.push('/page2-1')
               }} 
               className='home-onebox'
             >

@@ -2,26 +2,30 @@ import React from 'react';
 import Slide from '../components/Slide';
 
 function Introduce() {
-  const page = 'page1'
+  const page = 'page1';
+  const pageName = '인사말';
   return (
     <div>
-      <Slide id='slide' page={page}/>
+      <Slide pageName={pageName} page={page}/>
 
       <div id='intro-container'>
 
-        <div id='intro-title'>
-          <div id='intro-korean'>
+        <div className='title'>
+          <div className='title-korean'>
             CEO 인사말
           </div>
-            <div id='intro-english'>
+            <div className='title-english'>
               <div>
                 <span id='intro-english-top-red' className='intro-english-top'>President</span>
                 <span className='intro-english-top'>'s</span>
               </div>
-              <div id='intro-english-bottom'>
+              <div id= 'intro-english-bottom' className='title-english-bottom'>
                 MESSAGES
               </div>
             </div>
+            <div className='title-korean2'>
+            고객의 만족을 최우선으로 생각합니다.
+            </div>  
           </div>
       
         <div id='introduction'>
