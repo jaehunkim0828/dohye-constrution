@@ -343,12 +343,12 @@ button:focus {
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;
-  margin-top: 4rem;
+  margin-top: 6rem;
   width: 100%;
   height: 35rem;
 }
 
-#intro-title {
+.title {
   display: flex;
   flex-direction: column;
   width: 23rem;
@@ -356,20 +356,29 @@ button:focus {
   color:rgb(64, 64, 64);
 }
 
-#intro-korean{
+.title-korean{
   font-size: 1.3rem;
   font-weight: 500;
 }
 
-#intro-english{
+.title-english{
   font-size: 3rem;
   font-weight: 600;
 }
-
+.title-korean2{
+  font-size: 1rem;
+  font-weight: 400;
+  /* border: 0.1rem solid black; */
+}
+.title-english-bottom{
+  color:rgb(153, 38, 38);
+}
+#intro-english-bottom{
+  color:rgb(64, 64, 64);
+}
 #intro-english-top-red{
   color:rgb(153, 38, 38);
 }
-
 #introduction {
   display: flex;
   flex-direction: column;
