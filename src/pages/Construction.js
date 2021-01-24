@@ -1,24 +1,20 @@
 import React from 'react';
 
 import Slide from '../components/Slide';
+import Title from '../components/Title';
 import image1 from '../images/cst1.jpg';
 import image2 from '../images/cst2.jpg';
 
 function Construction() {
   const page = 'page2';
   const pageName = '준공/ 시공사진';
+  const titleObj = {title: 'Company', subtitle: 'PORTPOLIO'};
 
   return (
     <div>
       <Slide page={page} pageName={pageName} />
       <div className='construction-container'>
-        <div className='page-title-container'>
-          <div className='page-title'>준공/ 시공사진</div>
-          <div className='page-subtitle'>
-            <div className='page-subtitle-black'>Company</div>
-            <div className='page-subtitle-red'>PORTPOLIO</div>
-          </div>
-        </div>
+        <Title pageName={pageName} title={titleObj.title} subtitle={titleObj.subtitle} />
         <div id='construction-row-list'>
           <div className='construction-row-container'>
             <div className='construction-item-container'>
