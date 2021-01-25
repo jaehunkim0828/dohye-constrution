@@ -1,29 +1,19 @@
 import React from 'react';
 import Slide from '../components/Slide';
 import Image from '../images/brochureLogo.png';
+import Title from '../components/Title';
 function Brochure() {
   const page = 'page4';
   const pageName = '브로셔';
+  const titleObj = {title: 'BROCHURE'};
 
   return (
     <div>
       <Slide page={page} pageName={pageName} />
-      <div id='brochure-container'>
-        <div className='title' id='brochure-title'>
-          <div className='title-korean'>
-            지명원
-          </div>
-          <div className='title-english'>
-            <div class='title-english-bottom'>BROCHURE</div>
-          </div>
-          <div className='title-korean2'>
-            고객의 만족을 최우선으로 생각합니다.
-          </div>  
-        </div>
-
+      <Title />
         <div id='brochure-container-bottom'>
           <div id='brochure-logo'>
-            <img src={Image} style={{width:'35rem'}}/>
+            <img src={Image} style={{width:'35rem'}} alt='none' />
           </div>
           <div id='brochure-download'>
             <div id='brochure-korean'>
@@ -36,9 +26,7 @@ function Brochure() {
             </div>
           </div>
         </div>
-
       </div>
-    </div>
   );
 }
 

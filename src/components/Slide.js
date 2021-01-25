@@ -42,10 +42,6 @@ function Slide(props) {
           name: '공사실적현황',
           page: '/page3-1',
         },
-        {
-          name: '기술자 보유현황',
-          page: '/page3-2'
-        },
       ];
       return arr;
     } else {
@@ -53,10 +49,6 @@ function Slide(props) {
         {
           name: '약도',
           page: '/page4-1'
-        },
-        {
-          name: '브로셔',
-          page: '/page4-2'
         },
       ];
       return arr;

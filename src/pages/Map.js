@@ -1,25 +1,19 @@
 import React from 'react';
 import Slide from '../components/Slide';
+import Title from '../components/Title';
 import Image from '../images/map.png';
 
 function Map() {
   const page = 'page4';
   const pageName = '약도';
+  const titleObj = {title: 'Dohye', subtitle: 'MAP'};
+
   return (
     <div>
       <Slide page={page} pageName={pageName} />
       <div id='map-container'>
         <div className='title' id='map-title'>
-          <div className='title-korean'>
-            약도
-          </div>
-          <div className='title-english'>
-            <div className='title-english-top'>Dohye</div>
-            <div class='title-english-bottom'>MAP</div>
-          </div>
-          <div className='title-korean2'>
-            고객의 만족을 최우선으로 생각합니다.
-          </div>  
+          <Title pageName={pageName} title={titleObj.title} subtitle={titleObj.subtitle} />  
 
           <div className='map-address'>
             <div>

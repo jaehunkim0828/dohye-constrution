@@ -14,39 +14,29 @@ import image10 from '../images/tenth.jpg';
 import image11 from '../images/eleventh.jpg';
 import image12 from '../images/twelveth.jpg';
 import image13 from '../images/thirteenth.jpg';
+import Title from '../components/Title';
 
 function Certification() {
-  const page = 'page1'
-  const pageName = '인증서'
+  const page = 'page1';
+  const pageName = '인증서';
+  const titleObj = {title: 'Company', subtitle: 'CERTIFICATION'};
 
   return (
     <div>
       <Slide page={page} pageName={pageName}/>
+      <Title pageName={pageName} title={titleObj.title} subtitle={titleObj.subtitle} />
       <div id='certification-container'>
-        <div className='title'>
-          <div className='title-korean'>
-            인증서
-          </div>
-          <div className='title-english'>
-            <div className='title-english-top'>Company</div>
-            <div class='title-english-bottom'>CERTIFICATION</div>
-          </div>
-          <div className='title-korean2'>
-            고객의 만족을 최우선으로 생각합니다.
-          </div>  
-        </div>
-
         <div id='certification-img'>
           <div className='certification-row'>
             <div className='img-box'>
-              <img src={image1} style={{width: '11rem'}}/>
+              <img src={image1} style={{width: '11rem'}} alt='none' />
               <div className='img-box-title'>
                 사업자 등록증
               </div>
             </div>
 
             <div className='img-box'>
-              <img src={image2} style={{width: '11rem'}}/>
+              <img src={image2} style={{width: '11rem'}} alt='none' />
               <div className='img-box-title'>
                 건설업 등록증
               </div>

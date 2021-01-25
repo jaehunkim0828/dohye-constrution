@@ -108,8 +108,6 @@ function CustomNav() {
             }}
           >
             <NavDropdown.Item className='down-item' href='/page3-1'>공사실적현황</NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item className='down-item' href='/page3-2'>기술자 보유현황</NavDropdown.Item>
           </NavDropdown>
           <NavDropdown
             className='list'
@@ -126,8 +124,6 @@ function CustomNav() {
             }}
           >
             <NavDropdown.Item className='down-item' href='/page4-1'>약도</NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item className='down-item' href='/page4-2'>브로셔</NavDropdown.Item>
           </NavDropdown> 
         </Navbar.Collapse>
         </Nav>

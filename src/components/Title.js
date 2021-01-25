@@ -8,6 +8,9 @@ function Title(props) {
       <div className='page-subtitle'>
         <div className='page-subtitle-black'>{title}</div>
         <div className='page-subtitle-red'>{subtitle}</div>
+        <div className='title-korean2'>
+          고객의 만족을 최우선으로 생각합니다.
+        </div> 
       </div>
     </div>
   )

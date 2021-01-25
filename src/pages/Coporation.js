@@ -7,6 +7,7 @@ import Image2 from '../images/corporation2.png';
 function Coporation() {
   const page = 'page3';
   const pageName = '공사실적현황';
+
   return (
     <div>
       <Slide page={page} pageName={pageName} />
