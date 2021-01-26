@@ -14,7 +14,9 @@ function Map() {
       <div id='map-container'>
         <div className='title' id='map-title'>
           <Title pageName={pageName} title={titleObj.title} subtitle={titleObj.subtitle} />  
-
+        </div>
+        <div id='map-img-container'>
+          <img src={Image} style={{width:'25rem'}} alt='none'/>
           <div className='map-address'>
             <div>
               <span className='map-address-red'>주소지: </span>
@@ -29,10 +31,6 @@ function Map() {
               <span>청명역 수인분당선 3번출구 </span>
             </div>
           </div>
-        </div>
-
-        <div id='map-img'>
-          <img src={Image} style={{width:'42rem'}}/>
         </div>
       </div>
     </div>
