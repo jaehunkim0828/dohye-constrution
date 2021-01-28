@@ -117,7 +117,7 @@ function Construction() {
               </div>
               <div className='construction-text'>
                 <div className='construction-text-title'>
-                  공사명: 중앙고속 화성 정비공장 증·개축공사
+                  공사명: (주)중앙고속 화성 정비공장 증·개축공사
                 </div>
                 <div className='construction-text-content'>
                   <div className='construction-text-items'>
@@ -218,7 +218,7 @@ function Construction() {
                     공사명: 베트남 하노이 하이퐁공단
                   </div>
                   <div className='construction-text-title'>
-                    동남석유공업공장 신축공사
+                    동남석유(주) 공업공장 신축공사
                   </div>
                 </div>
                 <div className='construction-text-content'>
