@@ -9,7 +9,7 @@ function Status() {
   const titleObj = {title: 'Company', subtitle: 'ORGANIZATION'};
 
   return (
-    <div>
+    <div className='page-padding'>
       <Slide page={page} pageName={pageName}/>
       <Title pageName={pageName} title={titleObj.title} subtitle={titleObj.subtitle} />
       <div id='status-container'>

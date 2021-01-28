@@ -11,7 +11,7 @@ function Ideology() {
   const titleObj = {title: 'Company', subtitle: 'MOTTO'};
 
   return (
-    <div>
+    <div className='page-padding'>
       <Slide page={page} pageName={pageName}/>
       <Title pageName={pageName} title={titleObj.title} subtitle={titleObj.subtitle} />
       <div id='id-container'>

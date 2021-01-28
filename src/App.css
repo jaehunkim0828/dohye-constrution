@@ -67,12 +67,48 @@ button:focus {
     width: 90%;
   }
 
+  #intro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 3rem;
+  }
+
+  #intro-bottom {
+    justify-content: center;
+  }
+
+  #intro-name {
+    justify-content: center;
+  }
+
+  #footer-script {
+    font-size: 0.5rem;
+  }
+
   .footer-subscript {
-    font-size: 0.6rem;
+    font-size: 0.3rem;
   }
-  .footer-script {
-    font-size: 0.8rem;
+
+  #footer {
+    padding: 0 1rem;
   }
+
+  .page-padding {
+    padding: 0 2rem;
+  }
+
+  .list-button {
+    width: 6rem;
+    height: 1.6rem;
+    font-size: 0.5rem;
+  }
+
+  #map-img {
+    width: 100%;
+  }
+
 }
 
 
@@ -118,6 +154,61 @@ button:focus {
   .dropdown-divider {
     width: 90%;
   }
+
+  #intro-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 3rem;
+    padding: 0 3rem;
+  }
+
+  #intro-text-container {
+    position: relative;
+    left: 4rem;
+  }
+
+  #intro-bottom {
+    justify-content: flex-end;
+  }
+
+  #intro-name {
+    justify-content: flex-end;
+  }
+
+  .intro-bottom {
+    position: relative;
+    right: 4rem;
+  }
+
+  #footer-script {
+    font-size: 1.2rem;
+  }
+
+  .footer-subscript {
+    font-size: 0.9rem;
+  }
+
+  #footer {
+    padding: 0 5rem;
+  }
+
+  .page-padding {
+    padding: 0 5rem;
+  }
+
+  .list-button {
+    width: 7.5rem;
+    height: 1.875rem;
+    font-size: 0.9rem;
+  }
+
+  #map-img {
+    width: 20rem;
+  }
+
 }
 
 @media (min-width: 880px) {
@@ -132,6 +223,60 @@ button:focus {
 
   .dropdown-divider {
     width: 80%;
+  }
+
+  #intro-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 3rem;
+    padding: 0 10rem;
+  }
+
+  #intro-text-container {
+    position: relative;
+    left: 4rem;
+  }
+
+  #intro-bottom {
+    justify-content: flex-end;
+  }
+
+  #intro-name {
+    justify-content: flex-end;
+  }
+
+  .intro-bottom {
+    position: relative;
+    right: 4rem;
+  }
+
+  #footer-script {
+    font-size: 1.2rem;
+  }
+
+  .footer-subscript {
+    font-size: 0.9rem;
+  }
+
+  #footer {
+    padding: 0 5rem;
+  }
+
+  .page-padding {
+    padding: 0 10rem;
+  }
+
+  .list-button {
+    width: 10rem;
+    height: 2.5rem;
+    font-size: 1.1rem;
+  }
+
+  #map-img {
+    width: 25rem;
   }
 } 
 
@@ -170,7 +315,6 @@ button:focus {
 /* footer */
 
 #footer {
-  padding: 0 5rem;
   background-color: rgb(107, 92,82);
   height: 6rem;
   display: flex;
@@ -330,13 +474,10 @@ button:focus {
 }
 
 .list-button {
-  width: 10rem;
-  height: 2.5rem;
   border: none;
   background-color: white;
   border: 0.1rem solid black;
   font-weight: 600;
-  font-size: 1.1rem;
 }
 
 .list-button:hover {
@@ -344,25 +485,30 @@ button:focus {
   color: white;
 }
 
-/* introduction */
+/* page */
 
-#intro-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-start;
-  padding: 0 7rem;
+.page-title-container {
   width: 100%;
-  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 0;
 }
+
+.page-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: rgb(64, 64, 64);
+}
+
+.page-subtitle {
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+
+/* introduction */
 
 #intro-title {
   margin-top: 3rem;
-}
-
-#intro-text-container {
-  position: relative;
-  left: 4rem;
 }
 
 .title-korean2{
@@ -408,7 +554,6 @@ margin-top: 2rem;
 #intro-bottom{
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
   margin-top: 4rem;
   
 }
@@ -416,8 +561,6 @@ margin-top: 2rem;
 .intro-bottom{
   color: rgb(107, 92, 82);
   font-weight: 500;
-  position: relative;
-  right: 4rem;
 }
 
 #intro-bottom-red{
@@ -428,7 +571,6 @@ margin-top: 2rem;
 #intro-name{
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
   font-weight: 500;
   color: black;
   font-size: 1.6rem;
@@ -489,7 +631,7 @@ margin-top: 2rem;
  
 }
 #certification-img{
-  width: 60%;
+  width: 70%;
   margin-top: 5rem;
   background-color: rgb(217,217,217);
   border: 0.1rem solid  rgb(217,217,217);
@@ -511,9 +653,7 @@ margin-top: 2rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 15rem;
-  height: 17rem;
- 
+  padding: 1rem;
 }
 .img-box-title{
   color:rgb(107, 92, 82);
@@ -522,23 +662,16 @@ margin-top: 2rem;
 #corporation-container{
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 80%;
-  height: 130rem;
-  margin-top: 4rem;
-  margin-left: 9rem;
- 
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+  width: 100%;
 }
 #corporation-title{
   display: flex;
-  margin-left: 5rem;
   width: 50rem;
-  height: 18rem;
- 
 }
 #corporation-img{
-  margin-left: 13.3rem;
   margin-top: 1rem;
 }
 /* technology */
@@ -571,24 +704,14 @@ margin-top: 2rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
   margin-top: 3rem;
-  width: 90%;
-}
-
-#map-title{
   width: 100%;
 }
 
 #map-img-container {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-#map-img {
-
 }
 
 .map-address{
@@ -678,23 +801,7 @@ margin-top: 2rem;
   
 }
 
-.page-title-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: 4rem 10rem;
-}
 
-.page-title {
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: rgb(64, 64, 64);
-}
-
-.page-subtitle {
-  font-size: 2.6rem;
-  font-weight: 700;
-}
 
 .page-subtitle-black {
   color: rgb(64, 64, 64);
@@ -725,10 +832,10 @@ margin-top: 2rem;
 .construction-item-container {
   display: flex;
   border: 0.1rem solid rgb(107, 92, 82);
-  width: 32rem;
+  width: 28rem;
   margin: 1rem;
   min-width: 15rem;
-  height: 15rem;
+  height: 14rem;
   align-items: center;
   justify-content: space-around;
   padding: 1.5rem 1rem;

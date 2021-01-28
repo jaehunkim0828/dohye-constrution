@@ -23,7 +23,7 @@ function Construction() {
   const titleObj = {title: 'Company', subtitle: 'PORTPOLIO'};
 
   return (
-    <div>
+    <div className='page-padding'>
       <Slide page={page} pageName={pageName} />
       <div className='construction-container'>
         <Title pageName={pageName} title={titleObj.title} subtitle={titleObj.subtitle} />
@@ -31,7 +31,7 @@ function Construction() {
           <div className='construction-row-container'>
             <div className='construction-item-container'>
               <div className='construction-image'>
-                <img src={image1} alt='none' style={{minWidth: '7rem',width: '14rem', height: '100%',}} />
+                <img src={image1} alt='none' style={{minWidth: '7rem',width: '12rem', height: '100%',}} />
               </div>
               <div className='construction-text'>
                 <div className='construction-text-title'>공사명: (주)경동세라텍아산공장증축공사</div>
@@ -43,7 +43,7 @@ function Construction() {
             </div>
             <div className='construction-item-container'>
               <div className='construction-image'>
-              <img src={image2} alt='none' style={{minWidth: '7rem',width: '14rem', height: '100%',}} />
+              <img src={image2} alt='none' style={{minWidth: '7rem',width: '12rem', height: '100%',}} />
               </div>
               <div className='construction-text'>
                 <div className='construction-text-title'>공사명: (주)엑시콘 천안공장 신축공사</div>
@@ -57,7 +57,7 @@ function Construction() {
           <div className='construction-row-container'>
             <div className='construction-item-container'>
               <div className='construction-image'>
-               <img src={image3} alt='none' style={{minWidth: '7rem',width: '14rem', height: '100%',}} />
+               <img src={image3} alt='none' style={{minWidth: '7rem',width: '12rem', height: '100%',}} />
               </div>
               <div className='construction-text'>
                 <div className='construction-text-title'>
@@ -75,7 +75,7 @@ function Construction() {
             </div>
             <div className='construction-item-container'>
               <div className='construction-image'>
-                <img src={image4} alt='none' style={{minWidth: '7rem',width: '14rem', height: '100%',}} />
+                <img src={image4} alt='none' style={{minWidth: '7rem',width: '12rem', height: '100%',}} />
               </div>
               <div className='construction-text'>
                 <div className='construction-text-title'>
@@ -95,7 +95,7 @@ function Construction() {
           <div className='construction-row-container'>
             <div className='construction-item-container'>
               <div className='construction-image'>
-                <img src={image5} alt='none' style={{minWidth: '7rem',width: '14rem', height: '100%',}} />
+                <img src={image5} alt='none' style={{minWidth: '7rem',width: '12rem', height: '100%',}} />
               </div>
               <div className='construction-text'>
                 <div className='construction-text-title'>
@@ -113,7 +113,7 @@ function Construction() {
             </div>
             <div className='construction-item-container'>
               <div className='construction-image'>
-                <img src={image6} alt='none' style={{minWidth: '7rem',width: '14rem', height: '100%',}} />
+                <img src={image6} alt='none' style={{minWidth: '7rem',width: '12rem', height: '100%',}} />
               </div>
               <div className='construction-text'>
                 <div className='construction-text-title'>
@@ -133,7 +133,7 @@ function Construction() {
           <div className='construction-row-container'>
             <div className='construction-item-container'>
               <div className='construction-image'>
-                <img src={image7} alt='none' style={{minWidth: '7rem',width: '14rem', height: '100%',}} />
+                <img src={image7} alt='none' style={{minWidth: '7rem',width: '12rem', height: '100%',}} />
               </div>
               <div className='construction-text'>
                 <div className='construction-text-title'>
@@ -152,7 +152,7 @@ function Construction() {
             </div>
             <div className='construction-item-container'>
               <div className='construction-image'>
-                <img src={image8} alt='none' style={{minWidth: '7rem',width: '14rem', height: '100%',}} />
+                <img src={image8} alt='none' style={{minWidth: '7rem',width: '12rem', height: '100%',}} />
               </div>
               <div className='construction-text'>
                 <div className='construction-text-title'>
@@ -172,7 +172,7 @@ function Construction() {
           <div className='construction-row-container'>
             <div className='construction-item-container'>
               <div className='construction-image'>
-                <img src={image9} alt='none' style={{minWidth: '7rem',width: '14rem', height: '100%',}} />
+                <img src={image9} alt='none' style={{minWidth: '7rem',width: '12rem', height: '100%',}} />
               </div>
               <div className='construction-text'>
                 <div className='construction-text-title'>
@@ -190,7 +190,7 @@ function Construction() {
             </div>
             <div className='construction-item-container'>
               <div className='construction-image'>
-                <img src={image10} alt='none' style={{minWidth: '7rem',width: '14rem', height: '100%',}} />
+                <img src={image10} alt='none' style={{minWidth: '7rem',width: '12rem', height: '100%',}} />
               </div>
               <div className='construction-text'>
                 <div className='construction-text-title'>
@@ -210,7 +210,7 @@ function Construction() {
           <div className='construction-row-container'>
             <div className='construction-item-container'>
               <div className='construction-image'>
-                <img src={image11} alt='none' style={{minWidth: '7rem',width: '14rem', height: '100%',}} />  
+                <img src={image11} alt='none' style={{minWidth: '7rem',width: '12rem', height: '100%',}} />  
               </div>
               <div className='construction-text'>
                 <div>  
@@ -233,7 +233,7 @@ function Construction() {
             </div>
             <div className='construction-item-container'>
               <div className='construction-image'>
-                <img src={image12} alt='none' style={{minWidth: '7rem',width: '14rem', height: '100%',}} />
+                <img src={image12} alt='none' style={{minWidth: '7rem',width: '12rem', height: '100%',}} />
               </div>
               <div className='construction-text'>
                 <div>
@@ -258,7 +258,7 @@ function Construction() {
           <div className='construction-row-container'>
             <div className='construction-item-container'>
               <div className='construction-image'>
-                <img src={image13} alt='none' style={{minWidth: '7rem',width: '14rem', height: '100%',}} />
+                <img src={image13} alt='none' style={{minWidth: '7rem',width: '12rem', height: '100%',}} />
               </div>
               <div className='construction-text'>
                 <div>  
@@ -281,7 +281,7 @@ function Construction() {
             </div>
             <div className='construction-item-container'>
               <div className='construction-image'>
-                <img src={image14} alt='none' style={{minWidth: '7rem',width: '14rem', height: '100%',}} />
+                <img src={image14} alt='none' style={{minWidth: '7rem',width: '12rem', height: '100%',}} />
               </div>
               <div className='construction-text'>
                 <div>

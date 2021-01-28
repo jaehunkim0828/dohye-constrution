@@ -9,14 +9,14 @@ function Map() {
   const titleObj = {title: 'Dohye', subtitle: 'MAP'};
 
   return (
-    <div>
+    <div class='page-padding'>
       <Slide page={page} pageName={pageName} />
       <div id='map-container'>
         <div className='title' id='map-title'>
           <Title pageName={pageName} title={titleObj.title} subtitle={titleObj.subtitle} />  
         </div>
         <div id='map-img-container'>
-          <img src={Image} style={{width:'25rem'}} alt='none'/>
+          <img id='map-img' src={Image} alt='none'/>
           <div className='map-address'>
             <div>
               <span className='map-address-red'>주소지: </span>
