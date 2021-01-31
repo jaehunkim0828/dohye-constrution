@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { Navbar, NavDropdown, Nav } from 'react-bootstrap';
+import { withRouter } from 'react-router';
 
 import Logo from '../images/mainLogo.png';
 
-function CustomNav() {
+function CustomNav(props) {
+  const { history } = props;
 
   const [isIntroHover, mouseIntroHover] = useState(false);  
 
@@ -69,13 +71,49 @@ function CustomNav() {
               console.log(isIntroHover);
             }}
           >
-            <NavDropdown.Item className='down-item' href='/page1-1'>인사말</NavDropdown.Item>
+            <NavDropdown.Item className='down-item' href='/page1-1'>
+              <button
+                className='list-down-button'
+                onClick={() => {
+                  history.push('/page1-1');
+                }}
+              >
+                인사말
+              </button>
+            </NavDropdown.Item>
             <NavDropdown.Divider />
-            <NavDropdown.Item className='down-item' href='/page1-2'>경영이념</NavDropdown.Item>
+            <NavDropdown.Item className='down-item' href='/page1-2'>
+              <button
+                className='list-down-button'
+                onClick={() => {
+                  history.push('/page1-2');
+                }}
+              >
+                경영이념
+              </button>
+            </NavDropdown.Item>
             <NavDropdown.Divider />
-            <NavDropdown.Item className='down-item' href='/page1-3'>조직현황</NavDropdown.Item>
+            <NavDropdown.Item className='down-item' href='/page1-3'>
+              <button
+                className='list-down-button'
+                onClick={() => {
+                  history.push('/page1-3');
+                }}
+              >
+                조직현황
+              </button>
+            </NavDropdown.Item>
             <NavDropdown.Divider />
-            <NavDropdown.Item className='down-item' href='/page1-4'>인증서</NavDropdown.Item>
+            <NavDropdown.Item className='down-item' href='/page1-4'>
+             <button
+                className='list-down-button'
+                onClick={() => {
+                  history.push('/page1-4');
+                }}
+              >
+                인증서
+              </button>
+            </NavDropdown.Item>
           </NavDropdown>
           <NavDropdown
             className='list'
@@ -91,7 +129,16 @@ function CustomNav() {
               console.log();
             }}
           >
-            <NavDropdown.Item className='down-item' href='/page2-1'>준공/ 시공사진</NavDropdown.Item>
+            <NavDropdown.Item className='down-item' href='/page2-1'>
+              <button
+                className='list-down-button'
+                onClick={() => {
+                  history.push('/page2-1');
+                }}
+              >
+                준공/ 시공사진
+              </button>
+            </NavDropdown.Item>
           </NavDropdown>
           <NavDropdown
             className='list'
@@ -107,7 +154,16 @@ function CustomNav() {
               console.log(isStatusHover);
             }}
           >
-            <NavDropdown.Item className='down-item' href='/page3-1'>공사실적현황</NavDropdown.Item>
+            <NavDropdown.Item className='down-item' href='/page3-1'>
+              <button
+                className='list-down-button'
+                onClick={() => {
+                  history.push('/page3-1');
+                }}
+              >
+                공사실적현황
+              </button>
+            </NavDropdown.Item>
           </NavDropdown>
           <NavDropdown
             className='list'
@@ -123,7 +179,16 @@ function CustomNav() {
               console.log(isCenterHover);
             }}
           >
-            <NavDropdown.Item className='down-item' href='/page4-1'>약도</NavDropdown.Item>
+            <NavDropdown.Item className='down-item'>
+              <button
+                className='list-down-button'
+                onClick={() => {
+                  history.push('/page4-1');
+                }}
+              >
+                약도
+              </button>
+            </NavDropdown.Item>
           </NavDropdown> 
         </Navbar.Collapse>
         </Nav>
@@ -132,4 +197,4 @@ function CustomNav() {
   )
 }
 
-export default CustomNav;
+export default withRouter(CustomNav);

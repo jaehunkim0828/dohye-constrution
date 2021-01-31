@@ -27,8 +27,8 @@ function Home(props) {
             </button>
             <button
               onClick={() => {
-                history.push('/page2-1')
-              }} 
+                history.push('/page2-1');
+              }}
               className='home-onebox'
             >
               <div className='home-image-name'>시공현장</div>
@@ -38,7 +38,7 @@ function Home(props) {
           <div className='home-rowbox'>
             <button
               onClick={() => {
-                history.push('/page3-1')
+                history.push('/page3-1');
               }} 
               className='home-onebox'
             >
@@ -47,7 +47,7 @@ function Home(props) {
             </button>
             <button
               onClick={() => {
-                history.push('/page4-1')  
+                history.push('/page4-1'); 
               }} 
               className='home-onebox'
             >
