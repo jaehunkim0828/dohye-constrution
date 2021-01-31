@@ -71,7 +71,7 @@ function CustomNav(props) {
               console.log(isIntroHover);
             }}
           >
-            <NavDropdown.Item className='down-item' href='/page1-1'>
+            <NavDropdown.Item className='down-item'>
               <button
                 className='list-down-button'
                 onClick={() => {
@@ -82,7 +82,7 @@ function CustomNav(props) {
               </button>
             </NavDropdown.Item>
             <NavDropdown.Divider />
-            <NavDropdown.Item className='down-item' href='/page1-2'>
+            <NavDropdown.Item className='down-item' >
               <button
                 className='list-down-button'
                 onClick={() => {
@@ -93,7 +93,7 @@ function CustomNav(props) {
               </button>
             </NavDropdown.Item>
             <NavDropdown.Divider />
-            <NavDropdown.Item className='down-item' href='/page1-3'>
+            <NavDropdown.Item className='down-item'>
               <button
                 className='list-down-button'
                 onClick={() => {
@@ -104,7 +104,7 @@ function CustomNav(props) {
               </button>
             </NavDropdown.Item>
             <NavDropdown.Divider />
-            <NavDropdown.Item className='down-item' href='/page1-4'>
+            <NavDropdown.Item className='down-item'>
              <button
                 className='list-down-button'
                 onClick={() => {
@@ -129,7 +129,7 @@ function CustomNav(props) {
               console.log();
             }}
           >
-            <NavDropdown.Item className='down-item' href='/page2-1'>
+            <NavDropdown.Item className='down-item'>
               <button
                 className='list-down-button'
                 onClick={() => {
@@ -154,7 +154,7 @@ function CustomNav(props) {
               console.log(isStatusHover);
             }}
           >
-            <NavDropdown.Item className='down-item' href='/page3-1'>
+            <NavDropdown.Item className='down-item'>
               <button
                 className='list-down-button'
                 onClick={() => {
