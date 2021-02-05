@@ -9,17 +9,12 @@ import next from '../images/next-icon.png';
 
 
 const CustomSlideImage = () => {
-  const images = [
-    image1,
-    image2,
-    image3
-  ];
 
   const slideInProperties = {
     indicators: true,
     scale: 1.4,
-    prevArrow: <div style={{width: '30px', marginRight: "-30px"}}><img src={next} alt='none' style={{ width: '2rem', cursor: 'pointer' }}/></div>,
-    nextArrow: <div style={{width: '30px', marginLeft: "-30px"}}><img src={back} alt='none' style={{ width: '2rem', cursor: 'pointer' }}/></div>,
+    prevArrow: <div style={{width: '30px', marginRight: "-30px"}}><img src={next} alt='none' style={{ width: '2rem', height: '2rem', cursor: 'pointer' }}/></div>,
+    nextArrow: <div style={{width: '30px', marginLeft: "-30px"}}><img src={back} alt='none' style={{ width: '2rem', height: '2rem', cursor: 'pointer' }}/></div>,
   }
   return (
     <div>
