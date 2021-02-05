@@ -14,7 +14,7 @@ function Status() {
       <Title pageName={pageName} title={titleObj.title} subtitle={titleObj.subtitle} />
       <div id='status-container'>
         <div id='status-image'>
-          <img src={image} style={{width: '55rem'}} alt='none' />
+          <img src={image} id='status-img' alt='none' />
         </div>
       </div>
 

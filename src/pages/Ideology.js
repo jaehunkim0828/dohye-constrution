@@ -21,7 +21,7 @@ function Ideology() {
             <span className='id-image-title'>종합건설</span>
             <span id='id-image-title-black' className='id-image-title'> 경영이념</span>
           </div>
-          <img src={image} style={{width: '30rem'}} alt='none' />
+          <img src={image} id='id-img' alt='none' />
         </div>
       </div>
     </div>
