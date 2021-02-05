@@ -109,6 +109,35 @@ button:focus {
     width: 100%;
   }
 
+  #home-container {
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  #home-box {
+    display: flex;
+    flex-direction: column;
+    width: 17.5rem;
+    border: 0.1rem solid black;
+    position: relative;
+    bottom: 5rem;
+    background-color: black;
+  }
+  
+  .home-rowbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+  }
+
+  #home-firstbox {
+
+  }
+
 }
 
 
@@ -209,6 +238,33 @@ button:focus {
     width: 20rem;
   }
 
+  #home-container {
+    padding: 3rem 0 3rem 3rem;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  #home-box {
+    display: flex;
+    flex-direction: column;
+    height: 23rem;
+    width: 35rem;
+    border: 0.1rem solid black;
+    position: relative;
+    bottom: 5rem;
+    background-color: black;
+  }
+  
+  .home-rowbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 1;
+  }
+
 }
 
 @media (min-width: 880px) {
@@ -278,6 +334,34 @@ button:focus {
   #map-img {
     width: 25rem;
   }
+
+  #home-container {
+    padding: 3rem 0 3rem 3rem;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  #home-box {
+    display: flex;
+    flex-direction: column;
+    height: 23rem;
+    width: 35rem;
+    border: 0.1rem solid black;
+    position: relative;
+    bottom: 5rem;
+    background-color: black;
+  }
+  
+  .home-rowbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 1;
+  }
+
 } 
 
 #nav-list {
@@ -418,36 +502,6 @@ button:focus {
 }
 
 /* Home-page */
-
-
-#home-container {
-  padding: 3rem 0;
-  height: 40rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-  left: 1rem;
-}
-
-#home-box {
-  display: flex;
-  flex-direction: column;
-  height: 23rem;
-  width: 35rem;
-  border: 0.1rem solid black;
-  position: relative;
-  bottom: 5rem;
-  background-color: black;
-}
-
-.home-rowbox {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex: 1;
-}
 
 #home-firstbox {
   background-color: white;
