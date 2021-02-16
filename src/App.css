@@ -99,6 +99,8 @@ button:focus {
 
   .page-padding {
     padding: 0 2rem;
+    display: flex;
+    flex: 1;
   }
 
   .list-button {
@@ -876,7 +878,6 @@ margin-top: 2rem;
 #map-container{
   display: flex;
   flex-wrap: wrap;
-  flex: 1;
   justify-content: space-between;
   margin-top: 3rem;
   width: 100%;
