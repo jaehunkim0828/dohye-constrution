@@ -384,6 +384,7 @@ button:focus {
 
   #footer {
     padding: 0 5rem;
+    height: 10rem;
   }
 
   .page-padding {
@@ -875,6 +876,7 @@ margin-top: 2rem;
 #map-container{
   display: flex;
   flex-wrap: wrap;
+  flex: 1;
   justify-content: space-between;
   margin-top: 3rem;
   width: 100%;
