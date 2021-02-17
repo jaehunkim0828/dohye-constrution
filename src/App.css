@@ -99,8 +99,6 @@ button:focus {
 
   .page-padding {
     padding: 0 2rem;
-    display: flex;
-    flex: 1;
   }
 
   .list-button {
@@ -387,8 +385,6 @@ button:focus {
   #footer {
     padding: 0 5rem;
     height: 10rem;
-    position: relative;
-    bottom: 0;
   }
 
   .page-padding {
