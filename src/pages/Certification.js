@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Lightbox from 'react-image-lightbox';
+import 'react-image-lightbox/style.css';
 
 import Slide from '../components/Slide';
 import image1 from '../images/first.jpg';
@@ -18,6 +19,15 @@ function Certification() {
   const page = 'page1';
   const pageName = '인증서';
   const titleObj = {title: 'Company', subtitle: 'CERTIFICATION'};
+  const [isOpen, changeBool] = useState(false);
+
+  const showImage = () => {
+    changeBool(true);
+  }
+
+  const leaveImage = () => {
+    changeBool(false);
+  }
 
   return (
     <div className='page-padding'>
@@ -25,9 +35,14 @@ function Certification() {
       <Title pageName={pageName} title={titleObj.title} subtitle={titleObj.subtitle} />
       <div id='certification-container'>
         <div id='certification-registration'>
-          <div>
+          <button 
+            style={{border: 'none', background: 'none'}}
+            onClick={() => {
+              showImage();
+            }}
+          >
             <img src={image1} style={{width: '12rem'}} alt='none' />
-          </div>
+          </button>
           <div id='certification-registration-intro'>
             <div id='certification-intro-name'>사업자 등록증</div>
             <div className='certification-intro-text'>법인명: (주) 도혜종합건설</div>
@@ -99,6 +114,14 @@ function Certification() {
           </div>
         </div>
       </div>
+      {isOpen && (
+          <Lightbox
+            mainSrc={image1}
+            onCloseRequest={() => {
+              leaveImage();
+            }}
+          />
+        )}
     </div>
   );
 }
