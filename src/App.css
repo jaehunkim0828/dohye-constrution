@@ -802,15 +802,46 @@ margin-top: 2rem;
   margin-bottom: 3rem;
  
 }
+
+#certification-registration {
+  width: 70%;
+  background-color: rgb(217,217,217);
+  border: 0.1rem solid  rgb(189, 189, 189);
+  border-radius: 20px;
+  padding: 2rem 4rem;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ #certification-registration-intro {
+    width: 12rem;
+ }
+
 #certification-img{
   width: 70%;
   margin-top: 5rem;
   background-color: rgb(217,217,217);
-  border: 0.1rem solid  rgb(217,217,217);
+  border: 0.1rem solid  rgb(189,189,189);
   border-radius: 20px;
   display: flex;
   flex-direction: column;
 }
+
+ #certification-intro-name {
+   font-weight: 800;
+   font-size: 1.4rem;
+   display: flex;
+   justify-content: center;
+   margin-bottom: 2rem;
+ }
+
+ .certification-intro-text {
+  margin: 1rem 0;
+  font-weight: 600;
+ }
+
 .certification-row{
   display: flex;
   margin: 2rem 0;
@@ -820,6 +851,7 @@ margin-top: 2rem;
   width: 100%;
  
 }
+
 .img-box{
   display: flex;
   flex-direction: column;

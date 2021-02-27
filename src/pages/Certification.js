@@ -24,15 +24,26 @@ function Certification() {
       <Slide page={page} pageName={pageName}/>
       <Title pageName={pageName} title={titleObj.title} subtitle={titleObj.subtitle} />
       <div id='certification-container'>
+        <div id='certification-registration'>
+          <div>
+            <img src={image1} style={{width: '12rem'}} alt='none' />
+          </div>
+          <div id='certification-registration-intro'>
+            <div id='certification-intro-name'>사업자 등록증</div>
+            <div className='certification-intro-text'>법인명: (주) 도혜종합건설</div>
+            <div className='certification-intro-text'>주관기관: 경기 도지사</div>
+            <div className='certification-intro-text'>개업일: 2009/07/09</div>
+            <div className='certification-intro-text'>사업자 등록증을 클릭하시면 자세히 확인하실 수 있습니다.</div>
+          </div>
+        </div>
         <div id='certification-img'>
           <div className='certification-row'>
             <div className='img-box'>
-              <img src={image1} style={{width: '9rem'}} alt='none' />
+              <img src={image13} style={{width: '9rem'}} alt='none' />
               <div className='img-box-title'>
                 사업자 등록증
               </div>
             </div>
-
             <div className='img-box'>
               <img src={image2} style={{width: '9rem'}} alt='none' />
               <div className='img-box-title'>
@@ -83,14 +94,6 @@ function Certification() {
               <img src={image9} style={{width: '9rem'}} alt='none'/>
               <div className='img-box-title'>
                 건설업 등록수첩(2)
-              </div>
-            </div>
-          </div>
-          <div className='certification-row'>
-            <div className='img-box'>
-              <img src={image13} style={{width: '9rem'}} alt='none'/>
-              <div className='img-box-title'>
-                신용평가등급 확인서
               </div>
             </div>
           </div>
