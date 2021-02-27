@@ -168,6 +168,19 @@ button:focus {
     height: 12rem;
   }
 
+  .certification-intro-text {
+    margin: 0.4rem 0;
+    font-weight: 600;
+    font-size: 0.8rem;
+   }
+
+   #certification-intro-name {
+    font-size: 1.3rem;
+  }
+
+  #certification-registration {
+    padding: 1rem 2rem;
+  }
 }
 
 
@@ -328,6 +341,18 @@ button:focus {
     height: 14rem;
   }
 
+  .certification-intro-text {
+    margin: 1rem 0;
+    font-weight: 600;
+   }
+
+   #certification-intro-name {
+    font-size: 1.4rem;
+  }
+
+  #certification-registration {
+    padding: 2rem 4rem;
+  }
 }
 
 @media (min-width: 880px) {
@@ -459,6 +484,18 @@ button:focus {
     height: 14rem;
   }
 
+  .certification-intro-text {
+    margin: 1rem 0;
+    font-weight: 600;
+   }
+
+   #certification-intro-name {
+     font-size: 1.4rem;
+   }
+
+   #certification-registration {
+     padding: 2rem 4rem;
+   }
 } 
 
 #nav-list {
@@ -808,7 +845,6 @@ margin-top: 2rem;
   background-color: rgb(217,217,217);
   border: 0.1rem solid  rgb(189, 189, 189);
   border-radius: 20px;
-  padding: 2rem 4rem;
   display: flex;
   flex-wrap: wrap-reverse;
   justify-content: space-around;
@@ -831,15 +867,9 @@ margin-top: 2rem;
 
  #certification-intro-name {
    font-weight: 800;
-   font-size: 1.4rem;
    display: flex;
    justify-content: center;
    margin-bottom: 2rem;
- }
-
- .certification-intro-text {
-  margin: 1rem 0;
-  font-weight: 600;
  }
 
 .certification-row{
