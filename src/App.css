@@ -237,11 +237,6 @@ button:focus {
     padding: 0 3rem;
   }
 
-  #intro-text-container {
-    position: relative;
-    left: 4rem;
-  }
-
   #intro-bottom {
     justify-content: flex-end;
   }
@@ -377,11 +372,6 @@ button:focus {
     width: 100%;
     margin-bottom: 3rem;
     padding: 0 10rem;
-  }
-
-  #intro-text-container {
-    position: relative;
-    left: 4rem;
   }
 
   #intro-bottom {
@@ -758,11 +748,11 @@ margin-top: 2rem;
 }
 
 #intro-middle2{
-  margin-top: 0.4rem;
+  margin-top: 1rem;
 }
 
 #intro-middle4{
-  margin-top: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 #intro-bottom{
