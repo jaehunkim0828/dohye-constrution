@@ -168,6 +168,19 @@ button:focus {
     height: 12rem;
   }
 
+  .certification-intro-text {
+    margin: 0.4rem 0;
+    font-weight: 600;
+    font-size: 0.8rem;
+   }
+
+   #certification-intro-name {
+    font-size: 1.3rem;
+  }
+
+  #certification-registration {
+    padding: 1rem 2rem;
+  }
 }
 
 
@@ -222,11 +235,6 @@ button:focus {
     width: 100%;
     margin-bottom: 3rem;
     padding: 0 3rem;
-  }
-
-  #intro-text-container {
-    position: relative;
-    left: 4rem;
   }
 
   #intro-bottom {
@@ -328,6 +336,18 @@ button:focus {
     height: 14rem;
   }
 
+  .certification-intro-text {
+    margin: 1rem 0;
+    font-weight: 600;
+   }
+
+   #certification-intro-name {
+    font-size: 1.4rem;
+  }
+
+  #certification-registration {
+    padding: 2rem 4rem;
+  }
 }
 
 @media (min-width: 880px) {
@@ -352,11 +372,6 @@ button:focus {
     width: 100%;
     margin-bottom: 3rem;
     padding: 0 10rem;
-  }
-
-  #intro-text-container {
-    position: relative;
-    left: 4rem;
   }
 
   #intro-bottom {
@@ -384,6 +399,7 @@ button:focus {
 
   #footer {
     padding: 0 5rem;
+    height: 10rem;
   }
 
   .page-padding {
@@ -458,6 +474,18 @@ button:focus {
     height: 14rem;
   }
 
+  .certification-intro-text {
+    margin: 1rem 0;
+    font-weight: 600;
+   }
+
+   #certification-intro-name {
+     font-size: 1.4rem;
+   }
+
+   #certification-registration {
+     padding: 2rem 4rem;
+   }
 } 
 
 #nav-list {
@@ -720,11 +748,11 @@ margin-top: 2rem;
 }
 
 #intro-middle2{
-  margin-top: 0.4rem;
+  margin-top: 1rem;
 }
 
 #intro-middle4{
-  margin-top: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 #intro-bottom{
@@ -801,15 +829,39 @@ margin-top: 2rem;
   margin-bottom: 3rem;
  
 }
+
+#certification-registration {
+  width: 70%;
+  background-color: rgb(217,217,217);
+  border: 0.1rem solid  rgb(189, 189, 189);
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ #certification-registration-intro {
+    width: 12rem;
+ }
+
 #certification-img{
   width: 70%;
   margin-top: 5rem;
   background-color: rgb(217,217,217);
-  border: 0.1rem solid  rgb(217,217,217);
+  border: 0.1rem solid  rgb(189,189,189);
   border-radius: 20px;
   display: flex;
   flex-direction: column;
 }
+
+ #certification-intro-name {
+   font-weight: 800;
+   display: flex;
+   justify-content: center;
+   margin-bottom: 2rem;
+ }
+
 .certification-row{
   display: flex;
   margin: 2rem 0;
@@ -819,6 +871,7 @@ margin-top: 2rem;
   width: 100%;
  
 }
+
 .img-box{
   display: flex;
   flex-direction: column;
