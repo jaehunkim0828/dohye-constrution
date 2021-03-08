@@ -1,0 +1,3 @@
+User-agent: *
+Allow:/
+Sitemap: http://dohye.co.kr/sitemap.xml
