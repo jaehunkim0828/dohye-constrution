@@ -20,9 +20,11 @@ function Certification() {
   const pageName = '인증서';
   const titleObj = {title: 'Company', subtitle: 'CERTIFICATION'};
   const [isOpen, changeBool] = useState(false);
+  const [initImg, changeImg] = useState('');
 
-  const showImage = () => {
+  const showImage = (img) => {
     changeBool(true);
+    changeImg(img);
   }
 
   const leaveImage = () => {
@@ -38,7 +40,7 @@ function Certification() {
           <button 
             style={{border: 'none', background: 'none'}}
             onClick={() => {
-              showImage();
+              showImage(image1);
             }}
           >
             <img src={image1} style={{width: '12rem'}} alt='none' />
@@ -54,19 +56,40 @@ function Certification() {
         <div id='certification-img'>
           <div className='certification-row'>
             <div className='img-box'>
-              <img src={image13} style={{width: '9rem'}} alt='none' />
+              <button 
+                style={{border: 'none', background: 'none'}}
+                onClick={() => {
+                  showImage(image13);
+                }}
+              >
+                <img src={image13} style={{width: '9rem'}} alt='none' />
+              </button>
               <div className='img-box-title'>
-                사업자 등록증
+                기업신용평가등급 확인서 
               </div>
             </div>
             <div className='img-box'>
-              <img src={image2} style={{width: '9rem'}} alt='none' />
+              <button 
+                style={{border: 'none', background: 'none'}}
+                onClick={() => {
+                  showImage(image2);
+                }}
+              >
+                <img src={image2} style={{width: '9rem'}} alt='none' />
+              </button>
               <div className='img-box-title'>
                 건설업 등록증
               </div>
             </div>
             <div className='img-box'>
-              <img src={image3} style={{width: '9rem'}} alt='none'/>
+            <button 
+              style={{border: 'none', background: 'none'}}
+              onClick={() => {
+                showImage(image3);
+              }}
+            >
+              <img src={image3} style={{width: '9rem'}} alt='none' />
+            </button>
               <div className='img-box-title'>
                 해외건설업 신고확인증
               </div>
@@ -74,19 +97,40 @@ function Certification() {
           </div>
           <div className='certification-row'>
             <div className='img-box'>
-              <img src={image4} style={{width: '9rem'}} alt='none'/>
+              <button 
+                style={{border: 'none', background: 'none'}}
+                onClick={() => {
+                  showImage(image4);
+                }}
+              >
+                <img src={image4} style={{width: '9rem'}} alt='none' />
+              </button>
               <div className='img-box-title'>
                 베트남 하노이 법인설립증
               </div>
             </div>
             <div className='img-box'>
-              <img src={image5} style={{width: '9rem'}} alt='none'/>
+              <button 
+                style={{border: 'none', background: 'none'}}
+                onClick={() => {
+                  showImage(image5);
+                }}
+              >
+                <img src={image5} style={{width: '9rem'}} alt='none' />
+              </button>
               <div className='img-box-title'>
                 외국인 투자허가증(1)
               </div>
             </div>
             <div className='img-box'>
-              <img src={image6} style={{width: '9rem'}} alt='none'/>
+              <button 
+                style={{border: 'none', background: 'none'}}
+                onClick={() => {
+                  showImage(image6);
+                }}
+              >
+                <img src={image6} style={{width: '9rem'}} alt='none' />
+              </button>
               <div className='img-box-title'>
                 외국인 투자허가증(2)
               </div>
@@ -94,19 +138,40 @@ function Certification() {
           </div>
           <div className='certification-row'>
             <div className='img-box'>
-              <img src={image7} style={{width: '9rem'}} alt='none'/>
+              <button 
+                style={{border: 'none', background: 'none'}}
+                onClick={() => {
+                  showImage(image7);
+                }}
+              >
+                <img src={image7} style={{width: '9rem'}} alt='none' />
+              </button>
               <div className='img-box-title'>
                 베트남 하노이 법인설립증
               </div>
             </div>
             <div className='img-box'>
-              <img src={image8} style={{width: '9rem'}} alt='none'/>
+              <button 
+                style={{border: 'none', background: 'none'}}
+                onClick={() => {
+                  showImage(image8);
+                }}
+              >
+                <img src={image8} style={{width: '9rem'}} alt='none' />
+              </button>
               <div className='img-box-title'>
                 건설업 등록수첩(1)
               </div>
             </div>
             <div className='img-box'>
-              <img src={image9} style={{width: '9rem'}} alt='none'/>
+              <button 
+                style={{border: 'none', background: 'none'}}
+                onClick={() => {
+                  showImage(image9);
+                }}
+              >
+                <img src={image9} style={{width: '9rem'}} alt='none' />
+              </button>
               <div className='img-box-title'>
                 건설업 등록수첩(2)
               </div>
@@ -116,7 +181,7 @@ function Certification() {
       </div>
       {isOpen && (
           <Lightbox
-            mainSrc={image1}
+            mainSrc={initImg}
             onCloseRequest={() => {
               leaveImage();
             }}

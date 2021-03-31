@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Lightbox from 'react-image-lightbox';
+import 'react-image-lightbox/style.css';
 
 import Slide from '../components/Slide';
 import Title from '../components/Title';
@@ -21,6 +23,17 @@ function Construction() {
   const page = 'page2';
   const pageName = '준공/ 시공사진';
   const titleObj = {title: 'Company', subtitle: 'PORTPOLIO'};
+  const [isOpen, changeBool] = useState(false);
+  const [initImg, changeImg] = useState('');
+
+  const showImage = (img) => {
+    changeBool(true);
+    changeImg(img);
+  }
+
+  const leaveImage = () => {
+    changeBool(false);
+  }
 
   return (
     <div className='page-padding'>
@@ -30,9 +43,18 @@ function Construction() {
         <div id='construction-row-list'>
           <div className='construction-row-container'>
             <div className='construction-item-container'>
-              <div className='construction-image'>
+              {/* <div className='construction-image'>
                 <img src={image1} alt='none' className='construction-img' />
-              </div>
+              </div> */}
+              <button 
+                className='construction-image'
+                style={{border: 'none', background: 'none'}}
+                onClick={() => {
+                  showImage(image1);
+                }}
+              >
+              <img src={image1} alt='none' className='construction-img' />
+              </button>
               <div className='construction-text'>
                 <div className='construction-text-title'>공사명: (주)경동세라텍아산공장증축공사</div>
                 <div className='construction-text-content'>
@@ -42,9 +64,19 @@ function Construction() {
               </div>
             </div>
             <div className='construction-item-container'>
-              <div className='construction-image'>
+              {/* <div className='construction-image'>
               <img src={image2} alt='none' className='construction-img' />
-              </div>
+              </div> */}
+
+              <button 
+                className='construction-image'
+                style={{border: 'none', background: 'none'}}
+                onClick={() => {
+                  showImage(image2);
+                }}
+              >
+              <img src={image2} alt='none' className='construction-img' />
+              </button>
               <div className='construction-text'>
                 <div className='construction-text-title'>공사명: (주)엑시콘 천안공장 신축공사</div>
                 <div className='construction-text-content'>
@@ -56,9 +88,18 @@ function Construction() {
           </div>
           <div className='construction-row-container'>
             <div className='construction-item-container'>
-              <div className='construction-image'>
+              {/* <div className='construction-image'>
                <img src={image3} alt='none' className='construction-img' />
-              </div>
+              </div> */}
+              <button 
+                className='construction-image'
+                style={{border: 'none', background: 'none'}}
+                onClick={() => {
+                  showImage(image3);
+                }}
+              >
+              <img src={image3} alt='none' className='construction-img' />
+              </button>
               <div className='construction-text'>
                 <div className='construction-text-title'>
                   공사명: 가야미(주) 증축공사
@@ -74,9 +115,18 @@ function Construction() {
               </div>
             </div>
             <div className='construction-item-container'>
-              <div className='construction-image'>
+              {/* <div className='construction-image'>
                 <img src={image4} alt='none' className='construction-img' />
-              </div>
+              </div> */}
+              <button 
+                className='construction-image'
+                style={{border: 'none', background: 'none'}}
+                onClick={() => {
+                  showImage(image4);
+                }}
+              >
+              <img src={image4} alt='none' className='construction-img' />
+              </button>
               <div className='construction-text'>
                 <div className='construction-text-title'>
                   공사명: (주)엑시콘 천안공장 신축공사
@@ -94,9 +144,18 @@ function Construction() {
           </div>
           <div className='construction-row-container'>
             <div className='construction-item-container'>
-              <div className='construction-image'>
+              {/* <div className='construction-image'>
                 <img src={image5} alt='none' className='construction-img' />
-              </div>
+              </div> */}
+              <button 
+                className='construction-image'
+                style={{border: 'none', background: 'none'}}
+                onClick={() => {
+                  showImage(image5);
+                }}
+              >
+              <img src={image5} alt='none' className='construction-img' />
+              </button>
               <div className='construction-text'>
                 <div className='construction-text-title'>
                   공사명: (주)영재철강 안산공장 신축공사
@@ -112,9 +171,18 @@ function Construction() {
               </div>
             </div>
             <div className='construction-item-container'>
-              <div className='construction-image'>
+              {/* <div className='construction-image'>
                 <img src={image6} alt='none' className='construction-img' />
-              </div>
+              </div> */}
+              <button 
+                className='construction-image'
+                style={{border: 'none', background: 'none'}}
+                onClick={() => {
+                  showImage(image6);
+                }}
+              >
+              <img src={image6} alt='none' className='construction-img' />
+              </button>
               <div className='construction-text'>
                 <div className='construction-text-title'>
                   공사명: (주)중앙고속 화성 정비공장 증·개축공사
@@ -132,9 +200,18 @@ function Construction() {
           </div>
           <div className='construction-row-container'>
             <div className='construction-item-container'>
-              <div className='construction-image'>
+              {/* <div className='construction-image'>
                 <img src={image7} alt='none' className='construction-img' />
-              </div>
+              </div> */}
+              <button 
+                className='construction-image'
+                style={{border: 'none', background: 'none'}}
+                onClick={() => {
+                  showImage(image7);
+                }}
+              >
+              <img src={image7} alt='none' className='construction-img' />
+              </button>
               <div className='construction-text'>
                 <div className='construction-text-title'>
                   공사명: 왕림개발(주) 근린생활 신축공사
@@ -151,9 +228,18 @@ function Construction() {
               </div>
             </div>
             <div className='construction-item-container'>
-              <div className='construction-image'>
+              {/* <div className='construction-image'>
                 <img src={image8} alt='none' className='construction-img' />
-              </div>
+              </div> */}
+              <button 
+                className='construction-image'
+                style={{border: 'none', background: 'none'}}
+                onClick={() => {
+                  showImage(image8);
+                }}
+              >
+              <img src={image8} alt='none' className='construction-img' />
+              </button>
               <div className='construction-text'>
                 <div className='construction-text-title'>
                   공사명: (주)벨란 안산공장 신축공사
@@ -171,9 +257,18 @@ function Construction() {
           </div>
           <div className='construction-row-container'>
             <div className='construction-item-container'>
-              <div className='construction-image'>
+              {/* <div className='construction-image'>
                 <img src={image9} alt='none' className='construction-img' />
-              </div>
+              </div> */}
+              <button 
+                className='construction-image'
+                style={{border: 'none', background: 'none'}}
+                onClick={() => {
+                  showImage(image9);
+                }}
+              >
+              <img src={image9} alt='none' className='construction-img' />
+              </button>
               <div className='construction-text'>
                 <div className='construction-text-title'>
                   공사명: YIK(주) 아산공장 신축공사
@@ -189,9 +284,18 @@ function Construction() {
               </div>
             </div>
             <div className='construction-item-container'>
-              <div className='construction-image'>
+              {/* <div className='construction-image'>
                 <img src={image10} alt='none' className='construction-img' />
-              </div>
+              </div> */}
+              <button 
+                className='construction-image'
+                style={{border: 'none', background: 'none'}}
+                onClick={() => {
+                  showImage(image10);
+                }}
+              >
+              <img src={image10} alt='none' className='construction-img' />
+              </button>
               <div className='construction-text'>
                 <div className='construction-text-title'>
                   공사명: (주)샘텍 아산공장 신축공사
@@ -209,9 +313,18 @@ function Construction() {
           </div>
           <div className='construction-row-container'>
             <div className='construction-item-container'>
-              <div className='construction-image'>
+              {/* <div className='construction-image'>
                 <img src={image11} alt='none' className='construction-img' />  
-              </div>
+              </div> */}
+              <button 
+                className='construction-image'
+                style={{border: 'none', background: 'none'}}
+                onClick={() => {
+                  showImage(image11);
+                }}
+              >
+              <img src={image11} alt='none' className='construction-img' />
+              </button>
               <div className='construction-text'>
                 <div>  
                   <div className='construction-text-title'>
@@ -232,9 +345,18 @@ function Construction() {
               </div>
             </div>
             <div className='construction-item-container'>
-              <div className='construction-image'>
+              {/* <div className='construction-image'>
                 <img src={image12} alt='none' className='construction-img' />
-              </div>
+              </div> */}
+              <button 
+                className='construction-image'
+                style={{border: 'none', background: 'none'}}
+                onClick={() => {
+                  showImage(image12);
+                }}
+              >
+              <img src={image12} alt='none' className='construction-img' />
+              </button>
               <div className='construction-text'>
                 <div>
                   <div className='construction-text-title'>
@@ -257,9 +379,18 @@ function Construction() {
           </div>
           <div className='construction-row-container'>
             <div className='construction-item-container'>
-              <div className='construction-image'>
+              {/* <div className='construction-image'>
                 <img src={image13} alt='none' className='construction-img' />
-              </div>
+              </div> */}
+              <button 
+                className='construction-image'
+                style={{border: 'none', background: 'none'}}
+                onClick={() => {
+                  showImage(image13);
+                }}
+              >
+              <img src={image13} alt='none' className='construction-img' />
+              </button>
               <div className='construction-text'>
                 <div>  
                   <div className='construction-text-title'>
@@ -280,9 +411,18 @@ function Construction() {
               </div>
             </div>
             <div className='construction-item-container'>
-              <div className='construction-image'>
+              {/* <div className='construction-image'>
                 <img src={image14} alt='none' className='construction-img' />
-              </div>
+              </div> */}
+              <button 
+                className='construction-image'
+                style={{border: 'none', background: 'none'}}
+                onClick={() => {
+                  showImage(image14);
+                }}
+              >
+              <img src={image14} alt='none' className='construction-img' />
+              </button>
               <div className='construction-text'>
                 <div>
                   <div className='construction-text-title'>
@@ -308,6 +448,14 @@ function Construction() {
           </div>
         </div>
       </div>
+      {isOpen && (
+          <Lightbox
+            mainSrc={initImg}
+            onCloseRequest={() => {
+              leaveImage();
+            }}
+          />
+        )}
     </div>
   );
 }
