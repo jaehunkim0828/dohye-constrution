@@ -25,6 +25,6 @@ yarn-error.log*
 
 #ncloud-client-id
 
-.src/pages/Map.js
+.Config.js
 
 
