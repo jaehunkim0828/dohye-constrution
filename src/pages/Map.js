@@ -4,7 +4,6 @@ import NaverMapAPI from '../components/NaverMapAPI';
 import { RenderAfterNavermapsLoaded } from  'react-naver-maps';
 import Slide from '../components/Slide';
 import Title from '../components/Title';
-import * as config from '../Config';
 
 function Map() {
   const page = 'page4';
@@ -20,7 +19,7 @@ function Map() {
         </div>
         <div id='map-img-container'>
           <RenderAfterNavermapsLoaded
-            ncpClientId={config.CLIENT_ID} // 자신의 네이버 계정에서 발급받은 Client ID
+            ncpClientId={'jrswz3fc5j'} // 자신의 네이버 계정에서 발급받은 Client ID
             error={<p>Maps Load Error</p>}
             loading={<p>Maps Loading...</p>}
           >
