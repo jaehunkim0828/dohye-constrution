@@ -17,6 +17,7 @@
 .env.development.locals
 .env.test.local
 .env.production.local
+.env
 
 npm-debug.log*
 yarn-debug.log*
@@ -24,6 +25,6 @@ yarn-error.log*
 
 #ncloud-client-id
 
-Map.js
+.src/pages/Map.js
 
 
