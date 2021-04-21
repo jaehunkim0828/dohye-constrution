@@ -1,22 +1,34 @@
 import React from 'react';
+
+import NaverMapAPI from '../components/NaverMapAPI';
+import { RenderAfterNavermapsLoaded } from  'react-naver-maps';
 import Slide from '../components/Slide';
 import Title from '../components/Title';
-import Image from '../images/map.png';
+import dotenv from 'dotenv';
+dotenv.config();
 
 function Map() {
+  console.log(process.env.CLIENT_ID);
   const page = 'page4';
   const pageName = '약도';
   const titleObj = {title: 'Dohye', subtitle: 'MAP'};
 
   return (
-    <div class='page-padding'>
+    <div className='page-padding'>
       <Slide page={page} pageName={pageName} />
       <div id='map-container'>
         <div className='title' id='map-title'>
           <Title pageName={pageName} title={titleObj.title} subtitle={titleObj.subtitle} />  
         </div>
         <div id='map-img-container'>
-          <img id='map-img' src={Image} alt='none'/>
+          <RenderAfterNavermapsLoaded
+            ncpClientId={'jrswz3fc5j'} // 자신의 네이버 계정에서 발급받은 Client ID
+            error={<p>Maps Load Error</p>}
+            loading={<p>Maps Loading...</p>}
+          >
+            <NaverMapAPI />
+          </RenderAfterNavermapsLoaded>
+          {/* <img id='map-img' src={Image} alt='none'/> */}
           <div className='map-address'>
             <div>
               <span className='map-address-red'>주소지: </span>
