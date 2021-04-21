@@ -20,8 +20,12 @@ import Certification from './pages/Certification';
 import Construction from './pages/Construction';
 import CustomNav from './components/CustomNav';
 import Footer from './components/Footer';
+import dotenv from 'dotenv';
+dotenv.config();
 
 function App() {
+
+  console.log(process.env);
 
   return (
     <div id='container'>
